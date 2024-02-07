@@ -29,12 +29,12 @@ export class PropertiesPageComponent {
   }
 
   onFieldUpdated(field: keyof User, value: string) {
-    // this.user.set({ <- Es una manera de hacerlo pero algo peligrsa
+    // this.user.set({ <- Es una manera de hacerlo pero algo peligrsa, con keyof se puede hacer mas seguro
     //   ...this.user(),
     //   [field]: value,
     // });
     //
-    // La misma manera de hacerlo pero con update, algo peligrosa
+    // La misma manera de hacerlo pero con update, algo peligrosa, con keyof se puede hacer mas seguro
     // this.user.update(current => ({
     //   ...current,
     //   [field]: value
